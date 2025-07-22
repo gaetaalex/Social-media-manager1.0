@@ -1,0 +1,51 @@
+{
+  "name": "social-media-manager-pro",
+  "version": "10.0.0",
+  "description": "Sistema completo de gerenciamento de redes sociais com login e deploy no Vercel",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "build": "echo 'Build completed - ready for Vercel'",
+    "vercel-build": "echo 'Vercel build completed'",
+    "test": "echo 'Tests not implemented yet'"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.10.0",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "form-data": "^4.0.4",
+    "googleapis": "^127.0.0",
+    "multer": "^1.4.5-lts.1",
+    "resend": "^2.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": [
+    "social-media",
+    "automation",
+    "youtube",
+    "facebook",
+    "instagram",
+    "vercel",
+    "login",
+    "authentication"
+  ],
+  "author": "Social Media Manager Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/social-media-manager-pro"
+  },
+  "vercel": {
+    "functions": {
+      "server.js": {
+        "maxDuration": 30
+      }
+    }
+  }
+}
